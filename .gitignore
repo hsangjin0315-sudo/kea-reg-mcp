@@ -1,0 +1,45 @@
+# 빌드 산출물
+data/index.json
+
+# 규정 데이터 — 저장소에 포함하지 않는다. alio_sync.py로 ALIO에서 직접 받는다(NOTICE 참고).
+data/extracted/
+data/sources.json
+
+# 시험문제 데이터 (출처 불명, 별도 보관)
+data/questions.json
+
+# 원본 PDF (시험범위 자료 — repo 미포함)
+붙임2. 시험범위(40)/
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.egg-info/
+.venv/
+venv/
+.pytest_cache/
+
+# macOS
+.DS_Store
+
+# 에디터·세션
+.claude/
+.vscode/
+.idea/
+*.swp
+
+# 설정 백업
+*.bak.json
+*.backup
+
+# 환경 변수
+.env
+.env.local
+
+# ALIO 동기화 캐시 (HWP/원시 md)
+data/_cache/
+
+# iCloud/Dropbox 등 동기화 폴더에서 생기는 충돌 사본 (' 2.md', ' 3.py' 등) 커밋 방지
+* [0-9].md
+* [0-9].py
